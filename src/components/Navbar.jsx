@@ -1,6 +1,36 @@
 import v1Logo from "../assets/port-v1-logo.png";
+
+/* const My_CV_PDF = "http://localhost:5173/file_pdf.pdf"; */
 const Navbar = () => {
-  const link = (
+  /*   const handleDownload = url => {
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.setAttribute("download", "file_pdf.pdf");
+
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  }; */
+
+  const handleDownload = () => {
+    // Extract the file ID from the Google Drive link
+    const driveLink =
+      "https://drive.google.com/file/d/18AeYRP1ngN6eM13L5O687pGAfzN1_R7w/view?fbclid=IwAR1QtWASaHvliAboN1V5_w2OW7ajT8Eek4NbhZjnuI4lrnPncatiFmbF4JM";
+    const fileId = driveLink.match(/\/d\/(.+?)\//)[1];
+
+    // Create a link with the appropriate Google Drive download URL
+    const downloadLink = `https://drive.google.com/uc?id=${fileId}`;
+
+    // Create an invisible link and trigger the click event
+    const link = document.createElement("a");
+    link.href = downloadLink;
+    link.download = "YourCVFileName.pdf"; // Set the desired file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  /*  const link = (
     <>
       <div className="cursor-pointer px-5">
         <a>Item 1</a>
@@ -12,45 +42,43 @@ const Navbar = () => {
         <a>Item 3</a>
       </div>
     </>
-  );
+  ); */
   return (
-    <div className="container  mx-auto">
-      <div className="navbar bg-base-100">
-        <div className="navbar-end">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              {link}
-            </ul>
-          </div>
-          <a className="btn btn-ghost text-xl">
-            <img className="max-w-[220px]" src={v1Logo} alt="logo" />
+    <div className="container  mx-auto bg-ray-500 px-4  ">
+      <div className="flex justify-between items-center py-2">
+        <div>
+          <a className="">
+            <img className="max-w-[220px] h-14" src={v1Logo} alt="logo" />
           </a>
         </div>
-        <div className="navbar-center hidden md:flex">
-          <ul className="menu menu-horizontal px-1">{link}</ul>
-          <div className="flex">
-            <p className="px-5 text-gray-400">|</p>
-            <a className="btn btn-neutral btn-sm">Download CV</a>
-          </div>
+        <div className="flex items-center px-4">
+          <ul className="flex  gap-5">
+            <div className=" px-5 cursor-pointer font-medium">
+              <a href="#">About</a>
+            </div>
+            <div className=" px-5 cursor-pointer font-medium">
+              <a href="#">Work</a>
+            </div>
+            <div className=" px-5 cursor-pointer font-medium">
+              <a href="#">Contact</a>
+            </div>
+          </ul>
+          <p className="text-gray-500 px-5">|</p>
+          {/* <a
+            href="https://drive.google.com/file/d/18AeYRP1ngN6eM13L5O687pGAfzN1_R7w/view?fbclid=IwAR1QtWASaHvliAboN1V5_w2OW7ajT8Eek4NbhZjnuI4lrnPncatiFmbF4JM"
+            download
+          >
+            <button className="btn btn-neutral btn-sm">Download CV</button>
+          </a> */}
+          <button onClick={handleDownload} className="btn btn-neutral btn-sm">
+            Download CV
+          </button>
+          {/* <button
+            onClick={() => handleDownload(My_CV_PDF)}
+            className="btn btn-neutral btn-sm"
+          >
+            Download CV
+          </button> */}
         </div>
       </div>
     </div>
