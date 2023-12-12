@@ -1,5 +1,7 @@
 import v1Logo from "../assets/port-v1-logo.png";
 
+import resume from "../assets/cv/resume1.pdf";
+
 /* const My_CV_PDF = "http://localhost:5173/file_pdf.pdf"; */
 const Navbar = () => {
   /*   const handleDownload = url => {
@@ -64,7 +66,7 @@ const Navbar = () => {
             </div>
           </ul>
           <p className="text-gray-500 px-5 max-sm:hidden">|</p>
-          <a href="/file_pdf.pdf" target="blank" download={"file_pdf.pdf"}>
+          <a href={resume} target="blank" download="Resume">
             <button
               onClick={handleDownload}
               className="btn btn-neutral btn-sm max-sm:hidden"
