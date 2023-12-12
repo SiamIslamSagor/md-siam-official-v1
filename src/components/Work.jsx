@@ -6,7 +6,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const Work = () => {
   return (
-    <div className="mb-20">
+    <section className="mb-20">
       <p className="text-center mb-20">
         <span className="px-5 font-medium py-1 rounded-full bg-base-300 inline mb-10">
           Recent Works
@@ -113,7 +113,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
