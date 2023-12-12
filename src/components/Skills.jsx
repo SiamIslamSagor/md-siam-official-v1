@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <section className="my-36 container mx-auto">
       <div className="flex items-center justify-center flex-col">
-        <p className="px-5 font-medium py-1 rounded-full bg-base-300 inline mb-8">
+        <p className="px-5 font-medium py-1 rounded-full bg-base-300 inline mb-10">
           Skills
         </p>
         <div className="flex gap-20 flex-wrap items-center justify-center">
