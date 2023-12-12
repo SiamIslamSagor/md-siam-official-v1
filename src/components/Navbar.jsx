@@ -53,32 +53,23 @@ const Navbar = () => {
         </div>
         <div className="flex items-center px-4">
           <ul className="flex  gap-5">
-            <div className=" px-5 cursor-pointer font-medium">
+            <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
               <a href="#">About</a>
             </div>
-            <div className=" px-5 cursor-pointer font-medium">
+            <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
               <a href="#">Work</a>
             </div>
-            <div className=" px-5 cursor-pointer font-medium">
+            <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
               <a href="#">Contact</a>
             </div>
           </ul>
-          <p className="text-gray-500 px-5">|</p>
-          {/* <a
-            href="https://drive.google.com/file/d/18AeYRP1ngN6eM13L5O687pGAfzN1_R7w/view?fbclid=IwAR1QtWASaHvliAboN1V5_w2OW7ajT8Eek4NbhZjnuI4lrnPncatiFmbF4JM"
-            download
+          <p className="text-gray-500 px-5 max-sm:hidden">|</p>
+          <button
+            onClick={handleDownload}
+            className="btn btn-neutral btn-sm max-sm:hidden"
           >
-            <button className="btn btn-neutral btn-sm">Download CV</button>
-          </a> */}
-          <button onClick={handleDownload} className="btn btn-neutral btn-sm">
             Download CV
           </button>
-          {/* <button
-            onClick={() => handleDownload(My_CV_PDF)}
-            className="btn btn-neutral btn-sm"
-          >
-            Download CV
-          </button> */}
         </div>
       </div>
     </div>

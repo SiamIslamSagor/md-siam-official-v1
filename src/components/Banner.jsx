@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Banner = () => {
   return (
-    <div className=" ">
+    <div className="my-4 ">
       <div className="flex justify-between max-md:flex-col">
         <div className="md:w-1/2 max-md:my-8  px-8  flex flex-col justify-center gap-8">
           <div>
@@ -26,9 +26,14 @@ const Banner = () => {
               <small>Open to work</small>
             </div>
           </div>
-          <div className="flex gap-4">
-            <FaGithub className="text-2xl" />
-            <FaLinkedin className="text-2xl" />
+          <div className="flex gap-4 items-center">
+            <div className="flex items-center gap-4">
+              <FaGithub className="text-2xl" />
+              <FaLinkedin className="text-2xl" />
+            </div>
+            <button className="btn btn-neutral btn-sm sm:hidden">
+              Download CV
+            </button>
           </div>
         </div>
         <div className="md:w-1/2  flex flex-col justify-end bordr max-md:items-center">
