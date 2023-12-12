@@ -64,12 +64,14 @@ const Navbar = () => {
             </div>
           </ul>
           <p className="text-gray-500 px-5 max-sm:hidden">|</p>
-          <button
-            onClick={handleDownload}
-            className="btn btn-neutral btn-sm max-sm:hidden"
-          >
-            Download CV
-          </button>
+          <a href="/file_pdf.pdf" target="blank" download={"file_pdf.pdf"}>
+            <button
+              onClick={handleDownload}
+              className="btn btn-neutral btn-sm max-sm:hidden"
+            >
+              Download CV
+            </button>
+          </a>{" "}
         </div>
       </div>
     </div>
