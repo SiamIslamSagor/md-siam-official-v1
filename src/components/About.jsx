@@ -2,7 +2,7 @@
 import myPic from "../assets/clearPic.jpg";
 const About = () => {
   return (
-    <section className="my-36 container mx-auto">
+    <section id="about" className="my-36 container mx-auto">
       <div className="flex items-center justify-center flex-col">
         <p className="px-5 font-medium py-1 rounded-full bg-base-300 inline mb-8">
           About me

@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id="contact">
       <p className="text-center mb-20">
         <span className="px-5 font-medium py-1 rounded-full bg-base-300 inline mb-10">
           Contact with me

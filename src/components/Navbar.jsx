@@ -15,6 +15,30 @@ const Navbar = () => {
   }; */
 
   const handleDownload = () => {
+    // Replace 'YOUR_GOOGLE_DRIVE_LINK' with the shareable link to your resume file
+    const driveLink =
+      "https://drive.google.com/file/d/1iGefe2QHaSH9diyPljG_tsmoELZ8Ua7s/view";
+
+    // Create a temporary link element
+    const downloadLink = document.createElement("a");
+
+    // Set the href attribute to the Google Drive link
+    downloadLink.href = driveLink;
+
+    // Set the download attribute with the desired file name
+    downloadLink.download = "md_siam_islam_sagor_resume.pdf"; // Replace with the desired file name
+
+    // Append the link to the document
+    document.body.appendChild(downloadLink);
+
+    // Trigger a click on the link to start the downloads
+    downloadLink.click();
+
+    // Remove the link from the document
+    document.body.removeChild(downloadLink);
+  };
+
+  /* const handleDownload = () => {
     // Extract the file ID from the Google Drive link
     const driveLink =
       "https://drive.google.com/file/d/18AeYRP1ngN6eM13L5O687pGAfzN1_R7w/view?fbclid=IwAR1QtWASaHvliAboN1V5_w2OW7ajT8Eek4NbhZjnuI4lrnPncatiFmbF4JM";
@@ -30,7 +54,7 @@ const Navbar = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  };
+  }; */
 
   /*  const link = (
     <>
@@ -56,19 +80,25 @@ const Navbar = () => {
         <div className="flex items-center px-4">
           <ul className="flex  gap-5">
             <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </div>
             <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
-              <a href="#">Work</a>
+              <a href="#work">Work</a>
             </div>
             <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </div>
           </ul>
           <p className="text-gray-500 px-5 max-sm:hidden">|</p>
-          <a href={resume} target="blank" download="Resume">
+          <a
+            href={
+              "https://drive.google.com/file/d/1iGefe2QHaSH9diyPljG_tsmoELZ8Ua7s/view"
+            }
+            target={"blank"}
+            download="Resume"
+          >
             <button
-              onClick={handleDownload}
+              // onClick={handleDownload}
               className="btn btn-neutral btn-sm max-sm:hidden"
             >
               Download CV
