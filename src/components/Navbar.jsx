@@ -1,7 +1,5 @@
 import v1Logo from "../assets/port-v1-logo.png";
 
-import resume from "../assets/cv/resume1.pdf";
-
 /* const My_CV_PDF = "http://localhost:5173/file_pdf.pdf"; */
 const Navbar = () => {
   /*   const handleDownload = url => {
@@ -13,30 +11,6 @@ const Navbar = () => {
     anchor.click();
     document.body.removeChild(anchor);
   }; */
-
-  const handleDownload = () => {
-    // Replace 'YOUR_GOOGLE_DRIVE_LINK' with the shareable link to your resume file
-    const driveLink =
-      "https://drive.google.com/file/d/1iGefe2QHaSH9diyPljG_tsmoELZ8Ua7s/view";
-
-    // Create a temporary link element
-    const downloadLink = document.createElement("a");
-
-    // Set the href attribute to the Google Drive link
-    downloadLink.href = driveLink;
-
-    // Set the download attribute with the desired file name
-    downloadLink.download = "md_siam_islam_sagor_resume.pdf"; // Replace with the desired file name
-
-    // Append the link to the document
-    document.body.appendChild(downloadLink);
-
-    // Trigger a click on the link to start the downloads
-    downloadLink.click();
-
-    // Remove the link from the document
-    document.body.removeChild(downloadLink);
-  };
 
   /* const handleDownload = () => {
     // Extract the file ID from the Google Drive link

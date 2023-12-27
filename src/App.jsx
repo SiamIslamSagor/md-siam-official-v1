@@ -9,13 +9,15 @@ import Work from "./components/Work";
 
 function App() {
   return (
-    <div className="mx-auto max-w-7xl px-2 md:px-8">
-      <Navbar />
-      <Banner />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
+    <div>
+      <div className="mx-auto max-w-7xl px-2 md:px-8">
+        <Navbar />
+        <Banner />
+        <About />
+        <Skills />
+        <Work />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

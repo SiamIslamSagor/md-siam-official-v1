@@ -139,13 +139,13 @@ const Work = () => {
                       Express
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
-                      Stripe
+                      Node
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
                       Tailwind
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
-                      TanStackQuery
+                      DaisyUI
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
                       Axios
@@ -188,7 +188,7 @@ const Work = () => {
                       CarMaster |
                     </h3>{" "}
                     <p className="text-gray-600 font-medium h-full">
-                      Full Stack
+                      Front End
                     </p>
                   </div>
                   <p className="text-base leading-5 text-gray-700">
@@ -201,23 +201,22 @@ const Work = () => {
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
                       React
                     </p>
-                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
-                      MongoDB
-                    </p>
+
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
                       Firebase
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
-                      Express
+                      MongoDB
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
-                      Stripe
+                      Express
                     </p>
+
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
                       Tailwind
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
-                      TanStackQuery
+                      DaisyUI
                     </p>
                     <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
                       Axios
