@@ -10,8 +10,8 @@ import Work from "./components/Work";
 function App() {
   return (
     <div>
+      <Navbar />
       <div className="mx-auto max-w-7xl px-2 md:px-8">
-        <Navbar />
         <Banner />
         <About />
         <Skills />

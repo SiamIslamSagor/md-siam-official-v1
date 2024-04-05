@@ -41,7 +41,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="my-4 ">
+    <section id="home" className="my-4 pt-32">
       <div className="flex justify-between max-md:flex-col">
         <div className="md:w-1/2 max-md:my-8  px-8  flex flex-col justify-center gap-8">
           <div>

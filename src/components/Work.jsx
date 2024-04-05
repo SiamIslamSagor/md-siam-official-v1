@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Work = () => {
   return (
-    <section id="work" className="mb-20">
+    <section id="work" className="py-20 pt-32">
       <p className="text-center mb-20">
         <span className="px-5 font-medium py-1 rounded-full bg-base-300 inline mb-10">
           Recent Works

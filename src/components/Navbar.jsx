@@ -1,4 +1,5 @@
 import v1Logo from "../assets/port-v1-logo.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 /* const My_CV_PDF = "http://localhost:5173/file_pdf.pdf"; */
 const Navbar = () => {
@@ -44,43 +45,89 @@ const Navbar = () => {
     </>
   ); */
   return (
-    <div className="container  mx-auto bg-ray-500 px-4  ">
-      <div className="flex justify-between items-center py-2">
-        <div>
-          <a className="">
-            <img className="max-w-[220px] h-14" src={v1Logo} alt="logo" />
-          </a>
-        </div>
-        <div className="flex items-center px-4">
-          <ul className="flex  gap-5">
-            <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
-              <a href="#about">About</a>
+    <>
+      <div className="border fixed w-full z-[999999999999] bg-white shadow-md">
+        <div className="container max-w-7xl mx-auto bg-ray-500 px-4  ">
+          <div className="flex justify-between items-center py-2">
+            <div>
+              <a className="">
+                <img className="max-w-[220px] h-14" src={v1Logo} alt="logo" />
+              </a>
             </div>
-            <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
-              <a href="#work">Work</a>
+            <div className="flex items-center lg:px-4">
+              <ul className="flex  lg:gap-10">
+                <div className="max-sm:hidden max-md:px-1-cursor-pointer font-medium">
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    to="home"
+                    className="cursor-pointer select-none p-2"
+                  >
+                    Home
+                  </Link>
+                </div>
+                <div className="max-sm:hidden max-md:px-1-cursor-pointer font-medium">
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    to="about"
+                    className="cursor-pointer select-none p-2"
+                  >
+                    About
+                  </Link>
+                </div>
+                <div className="max-sm:hidden max-md:px-1-cursor-pointer font-medium">
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    to="skills"
+                    className="cursor-pointer select-none p-2"
+                  >
+                    Skills
+                  </Link>
+                </div>
+                <div className="max-sm:hidden max-md:px-1-cursor-pointer font-medium">
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    to="work"
+                    className="cursor-pointer select-none p-2"
+                  >
+                    Work
+                  </Link>
+                </div>
+                <div className="max-sm:hidden max-md:px-1-cursor-pointer font-medium">
+                  <Link
+                    smooth={true}
+                    duration={500}
+                    to="contact"
+                    className="cursor-pointer select-none p-2"
+                  >
+                    Contact
+                  </Link>
+                </div>
+              </ul>
+              <p className="text-gray-500 px-5 max-sm:hidden">|</p>
+              <a
+                href={
+                  "https://drive.google.com/file/d/17JuQtTBvBMEpcVj3zDqXslxGl28JC1Vt/view"
+                }
+                target={"blank"}
+                download="Resume"
+              >
+                <button
+                  // onClick={handleDownload}
+                  className="btn btn-neutral btn-sm max-sm:hidden"
+                >
+                  Download CV
+                </button>
+              </a>{" "}
             </div>
-            <div className="max-sm:hidden max-md:px-2 md:px-5 cursor-pointer font-medium">
-              <a href="#contact">Contact</a>
-            </div>
-          </ul>
-          <p className="text-gray-500 px-5 max-sm:hidden">|</p>
-          <a
-            href={
-              "https://drive.google.com/file/d/17JuQtTBvBMEpcVj3zDqXslxGl28JC1Vt/view"
-            }
-            target={"blank"}
-            download="Resume"
-          >
-            <button
-              // onClick={handleDownload}
-              className="btn btn-neutral btn-sm max-sm:hidden"
-            >
-              Download CV
-            </button>
-          </a>{" "}
+          </div>
         </div>
       </div>
-    </div>
+      <div className="h-20"></div>
+    </>
   );
 };
 
