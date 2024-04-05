@@ -7,7 +7,7 @@ const Footer = () => {
         <aside>
           <img className="md:max-w-sm" src={v1Logo} alt="" />
           <p>
-            Jr. front end web developer
+            MERN-STACK web developer
             <br />
             build your next project with best person.
           </p>

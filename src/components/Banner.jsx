@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { AttentionSeeker } from "react-awesome-reveal";
 import "animate.css";
-import bannerImg from "../assets/cropImg.png";
+// import bannerImg from "../assets/cropImg.png";
+import bannerImg from "../assets/me9.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -165,7 +166,7 @@ const Banner = () => {
               </AttentionSeeker>
             </div>
             <p>
-              I'm a MERN stack developer, I love writing code and learning new
+              I'm a MERN-STACK developer, I love writing code and learning new
               things. I want to become a senior developer in next 2-3 years.
             </p>
           </div>
@@ -192,9 +193,17 @@ const Banner = () => {
                 <FaLinkedin className="text-2xl hover:text-gray-500 duration-300" />
               </a>
             </div>
-            <button className="btn btn-neutral btn-sm sm:hidden">
-              Download CV
-            </button>
+            <a
+              href={
+                "https://drive.google.com/file/d/17JuQtTBvBMEpcVj3zDqXslxGl28JC1Vt/view"
+              }
+              target={"blank"}
+              download="Resume"
+            >
+              <button className="btn btn-neutral btn-sm sm:hidden">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
         <div className="md:w-1/2  flex flex-col justify-end bordr max-md:items-center">

@@ -2,6 +2,7 @@
 import p1 from "../assets/projects/PPP-p.png";
 import p2 from "../assets/projects/FH-p.png";
 import p3 from "../assets/projects/CM-p.png";
+import p4 from "../assets/projects/dfImg.png";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 
@@ -17,6 +18,86 @@ const Work = () => {
         <div className="border-2 rounded-2xl">
           <div className="pt-2 overflow-y-hidden">
             <div className="flex flex-col items-center justify-center">
+              <div className=" p-2 flex flex-row-reverse max-lg:flex-col w-full">
+                <div className="lg:w-1/2 lg:m-4 flex items-center">
+                  <img
+                    className="w-full  border-2 p-2 rounded-lg"
+                    src={p4}
+                    alt="PPP image"
+                  />
+                </div>
+                <div className="space-y-4 lg:w-1/2 p-2">
+                  <div className=" mt-5 flex items-center">
+                    <h3 className="text-xl lg:text-4xl inline-block font-medium ">
+                      Dream Finder |
+                    </h3>{" "}
+                    <p className="text-gray-600 font-medium h-full">
+                      Full Stack (Team Project)
+                    </p>
+                  </div>
+                  <p className="text-base leading-5 text-gray-700">
+                    This is a job-hunting web application, Where company jobs
+                    will be posted and a job hunter will achieve his dream job
+                    through Apply at Job.
+                  </p>
+                  <div className="w-full  flex flex-wrap gap-4">
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      Next.js
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      NextUI
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      MongoDB
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      Firebase
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      Express
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      Stripe
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      Tailwind
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      TanStackQuery
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      Axios
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      React-Hook-Form
+                    </p>
+                    <p className="bg-gray-200 px-4 py-1 text-base rounded-3xl  text-gray-600 font-medium">
+                      Awesome-React-Reveal
+                    </p>
+                  </div>
+                  <div>
+                    <a href="https://dream-finder.vercel.app/" target="blank">
+                      <button className="btn btn-neutral btn-circle">
+                        <BsBoxArrowUpRight />
+                      </button>
+                    </a>
+                    <a
+                      href="https://github.com/taskinahmadalfaruqe/Dream-Finder"
+                      target="blank"
+                    >
+                      <button className="btn ml-4 btn-circle">
+                        <FaGithub />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="border-2 rounded-2xl">
+          <div className="pt-2 overflow-y-hidden">
+            <div className="flex flex-col items-center justify-center">
               <div className=" p-2 flex max-lg:flex-col w-full">
                 <div className="lg:w-1/2 lg:m-4 flex items-center">
                   <img
@@ -25,7 +106,7 @@ const Work = () => {
                     alt="PPP image"
                   />
                 </div>
-                <div className="space-y-4 lg:w-1/2 p2">
+                <div className="space-y-4 lg:w-1/2 p-2">
                   <div className=" mt-5 flex items-center">
                     <h3 className="text-xl lg:text-4xl inline-block font-medium ">
                       PrimePropertyPlus |
@@ -108,7 +189,7 @@ const Work = () => {
                     alt="PPP image"
                   />
                 </div>
-                <div className="space-y-4 lg:w-1/2 p2">
+                <div className="space-y-4 lg:w-1/2 p-2">
                   <div className=" mt-5 flex items-center">
                     <h3 className="text-xl lg:text-4xl inline-block font-medium ">
                       FoodHub |
@@ -182,7 +263,7 @@ const Work = () => {
                     alt="PPP image"
                   />
                 </div>
-                <div className="space-y-4 lg:w-1/2 p2">
+                <div className="space-y-4 lg:w-1/2 p-2">
                   <div className=" mt-5 flex items-center">
                     <h3 className="text-xl lg:text-4xl inline-block font-medium ">
                       CarMaster |

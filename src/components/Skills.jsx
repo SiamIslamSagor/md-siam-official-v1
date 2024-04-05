@@ -8,6 +8,8 @@ import cssImg from "../assets/skills/CSS3_logo.svg.png";
 import githubImg from "../assets/skills/gitHubLog.png";
 import htmlImg from "../assets/skills/htmlLogo.png";
 
+import nextImg from "../assets/skills/nextLogo.png";
+
 const Skills = () => {
   return (
     <section className="my-36 container mx-auto">
@@ -34,6 +36,9 @@ const Skills = () => {
           </div>
           <div className="flex items-center justify-center ">
             <img className=" rounded-lg w-20 md:w-32  " src={nodeImg} alt="" />
+          </div>
+          <div className="flex items-center justify-center ">
+            <img className=" rounded-lg w-20 md:w-32  " src={nextImg} alt="" />
           </div>
           <div className="flex items-center justify-center ">
             <img

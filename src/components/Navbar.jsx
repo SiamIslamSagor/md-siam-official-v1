@@ -66,7 +66,7 @@ const Navbar = () => {
           <p className="text-gray-500 px-5 max-sm:hidden">|</p>
           <a
             href={
-              "https://drive.google.com/file/d/1iGefe2QHaSH9diyPljG_tsmoELZ8Ua7s/view"
+              "https://drive.google.com/file/d/17JuQtTBvBMEpcVj3zDqXslxGl28JC1Vt/view"
             }
             target={"blank"}
             download="Resume"
